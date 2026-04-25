@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنشاوي — كشري وحلواني</title>
+    <meta name="description" content="كشري وحلواني المنشاوي — الطعم الأصيل من قلب مصر. اكثر من 15 فرع في بني سويف وضواحيها.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <img src="logo.png" alt="المنشاوي" class="loader-logo">
+        <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="logo.png" alt="المنشاوي" class="nav-logo">
+                <span class="nav-brand-name">المنشاوي</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">الرئيسية</a></li>
+                <li><a href="menu.html">المنيو</a></li>
+                <li><a href="about.html">عن المنشاوي</a></li>
+                <li><a href="branches.html">الفروع</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-particles"><canvas id="heroCanvas"></canvas></div>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                أشهر كشري في بني سويف
+            </div>
+
+            <div class="hero-logo-wrap">
+                <img src="logo.png" alt="المنشاوي">
+            </div>
+
+            <h1 class="hero-title">
+                الكشري الأصيل
+                <span class="highlight">بطعم لا يُنسى</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                من قلب مصر إلى قلب بيتك — كشري وحلواني المنشاوي بتجربة مختلفة كل مرة
+            </p>
+
+            <div class="hero-actions">
+                <a href="menu.html" class="btn btn-primary">شوف المنيو</a>
+                <a href="branches.html" class="btn btn-glass">أقرب فرع ليك</a>
+            </div>
+
+            <div class="hero-phone-pill glow-pulse">
+                <span class="phone-emoji">📞</span>
+                <span class="phone-num">19865</span>
+            </div>
+        </div>
+
+        <div class="hero-scroll-hint">
+            <div class="scroll-mouse"></div>
+            <span>اسكرول</span>
+        </div>
+    </section>
+
+    <!-- Stats Strip -->
+    <section class="stats-strip">
+        <div class="container">
+            <div class="stats-strip-grid">
+                <div class="stat-strip-item">
+                    <div class="stat-strip-num counter" data-count="15" data-suffix="+">15+</div>
+                    <div class="stat-strip-label">فرع منتشر</div>
+                </div>
+                <div class="stat-strip-item">
+                    <div class="stat-strip-num counter" data-count="5000" data-suffix="+">5000+</div>
+                    <div class="stat-strip-label">وجبة يومياً</div>
+                </div>
+                <div class="stat-strip-item">
+                    <div class="stat-strip-num counter" data-count="100000" data-suffix="+">100K+</div>
+                    <div class="stat-strip-label">عميل سعيد</div>
+                </div>
+                <div class="stat-strip-item">
+                    <div class="stat-strip-num">سنين</div>
+                    <div class="stat-strip-label">من الخبرة</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card reveal reveal-d1">
+                    <span class="feature-icon">🌿</span>
+                    <h3>خامات طازجة يومياً</h3>
+                    <p>بنختار أفضل المكونات كل صباح لضمان أعلى جودة</p>
+                </div>
+                <div class="feature-card reveal reveal-d2">
+                    <span class="feature-icon">🏪</span>
+                    <h3>فروع في كل مكان</h3>
+                    <p>أكتر من 15 فرع منتشرين في بني سويف وضواحيها</p>
+                </div>
+                <div class="feature-card reveal reveal-d3">
+                    <span class="feature-icon">⭐</span>
+                    <h3>وصفة سرية أصيلة</h3>
+                    <p>طعم فريد ومميز بوصفة محلية الصنع ما اتغيرتش</p>
+                </div>
+                <div class="feature-card reveal reveal-d4">
+                    <span class="feature-icon">💰</span>
+                    <h3>أسعار في المتناول</h3>
+                    <p>أكل كويس بسعر عادل — دي فلسفتنا من اليوم الأول</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Menu -->
+    <section class="featured-menu section-padding">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-divider"></div>
+                <h2>أشهر أطباقنا</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="dish-cards">
+                <div class="dish-card reveal reveal-d1">
+                    <div class="dish-card-img img-zoom">
+                        <div class="dish-card-overlay"></div>
+                        <div class="dish-card-badge">الأكثر طلباً</div>
+                        <img src="menu1.png" alt="الكشري" style="object-position: center top;">
+                    </div>
+                    <div class="dish-card-body">
+                        <h3>الكشري</h3>
+                        <p>أرز، معكرونة، عدس، بصل محمر، صلصة حارة — طبق مصر الأول</p>
+                        <div class="dish-card-footer">
+                            <div class="dish-price">يبدأ من <strong>10 جنيه</strong></div>
+                            <a href="menu.html#koshary" class="btn btn-sm btn-outline-orange">الأسعار</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card reveal reveal-d2">
+                    <div class="dish-card-img img-zoom">
+                        <div class="dish-card-overlay"></div>
+                        <div class="dish-card-badge dish-badge-new">جديد</div>
+                        <img src="menu2.png" alt="الطواجن" style="object-position: center top;">
+                    </div>
+                    <div class="dish-card-body">
+                        <h3>الطواجن</h3>
+                        <p>طاجن باللحمة أو الفراخ أو الكبدة — بالطريقة المصرية الأصيلة</p>
+                        <div class="dish-card-footer">
+                            <div class="dish-price">يبدأ من <strong>29 جنيه</strong></div>
+                            <a href="menu.html#tawagen" class="btn btn-sm btn-outline-orange">الأسعار</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card reveal reveal-d3">
+                    <div class="dish-card-img img-zoom">
+                        <div class="dish-card-overlay"></div>
+                        <img src="menu1.png" alt="الفتة" style="object-position: 80% center;">
+                    </div>
+                    <div class="dish-card-body">
+                        <h3>الفتة</h3>
+                        <p>فتة سادة، بالكبدة، بالفراخ، أو باللحمة — طبق العيد والمناسبات</p>
+                        <div class="dish-card-footer">
+                            <div class="dish-price">يبدأ من <strong>47 جنيه</strong></div>
+                            <a href="menu.html#fatta" class="btn btn-sm btn-outline-orange">الأسعار</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center-btn reveal">
+                <a href="menu.html" class="btn btn-primary">المنيو الكامل</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-section">
+        <div class="cta-shape cta-shape-1"></div>
+        <div class="cta-shape cta-shape-2"></div>
+        <div class="cta-content">
+            <div class="cta-tag">اطلب دلوقتي</div>
+            <h2>جاهزين نخدمك!</h2>
+            <p>اتصل بينا أو زورنا في أقرب فرع — بنستناك</p>
+            <div class="cta-phone-big">
+                <span style="font-size:2rem">📞</span>
+                <span class="cta-num">19865</span>
+            </div>
+            <a href="branches.html" class="btn btn-glass">أقرب فرع ليك</a>
+        </div>
+    </section>
+
+    <!-- Branches Preview -->
+    <section class="branches-preview section-padding">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-divider"></div>
+                <h2>فروعنا</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="branches-flow reveal">
+                <div class="branch-pill"><span class="branch-pill-dot"></span>المسلة</div>
+                <div class="branch-pill"><span class="branch-pill-dot"></span>باغوص</div>
+                <div class="branch-pill"><span class="branch-pill-dot"></span>المحكمة</div>
+                <div class="branch-pill"><span class="branch-pill-dot"></span>بني سويف</div>
+                <div class="branch-pill"><span class="branch-pill-dot"></span>إبشواي</div>
+                <div class="branch-pill"><span class="branch-pill-dot"></span>بيهمو</div>
+                <div class="branch-pill"><span class="branch-pill-dot"></span>دمو</div>
+                <div class="branch-pill"><span class="branch-pill-dot"></span>ترسا</div>
+                <div class="branch-pill"><span class="branch-pill-dot"></span>نقاليفه</div>
+                <div class="branch-pill"><span class="branch-pill-dot"></span>زاوية الكرادسة</div>
+                <div class="branch-pill"><span class="branch-pill-dot"></span>بني صالح</div>
+                <div class="branch-pill"><span class="branch-pill-dot"></span>منشأة عبدالله</div>
+            </div>
+
+            <div class="center-btn reveal">
+                <a href="branches.html" class="btn btn-primary">كل الفروع</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo-wrap">
+                    <img src="logo.png" alt="المنشاوي">
+                    <p>كشري وحلواني المنشاوي — طعم أصيل من قلب مصر منذ سنين. أكتر من 15 فرع في بني سويف وضواحيها.</p>
+                    <div class="social-links" style="margin-top:20px">
+                        <a href="https://www.facebook.com/koshary.Elmenshawy" target="_blank" class="social-link facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="menu.html">المنيو</a></li>
+                        <li><a href="about.html">عن المنشاوي</a></li>
+                        <li><a href="branches.html">الفروع</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>تواصل معنا</h4>
+                    <div class="footer-phone">19865</div>
+                    <a href="https://www.facebook.com/koshary.Elmenshawy" target="_blank" class="footer-contact-text" style="color:rgba(255,255,255,0.5)">كشري المنشاوي على فيسبوك</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 المنشاوي — كشري وحلواني. جميع الحقوق محفوظة</p>
+                <div class="footer-bottom-links">
+                    <a href="menu.html">المنيو</a>
+                    <a href="branches.html">الفروع</a>
+                    <a href="contact.html">تواصل</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

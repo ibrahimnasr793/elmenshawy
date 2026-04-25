@@ -1,0 +1,227 @@
+/* ====================================
+   المنشاوي — Modern Animations
+   ==================================== */
+
+/* ====================================
+   Core Keyframes
+   ==================================== */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-40px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(40px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.85); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+/* ====================================
+   Scroll Animation Setup
+   ==================================== */
+.reveal {
+    opacity: 0;
+    transform: translateY(36px);
+    transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1),
+                transform 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+
+.reveal.reveal-left  { transform: translateX(-36px); }
+.reveal.reveal-right { transform: translateX(36px); }
+.reveal.reveal-scale { transform: scale(0.9); }
+
+.reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Stagger delays */
+.reveal-d1 { transition-delay: 0.1s; }
+.reveal-d2 { transition-delay: 0.2s; }
+.reveal-d3 { transition-delay: 0.3s; }
+.reveal-d4 { transition-delay: 0.4s; }
+.reveal-d5 { transition-delay: 0.5s; }
+
+/* ====================================
+   Legacy classes (kept for hero)
+   ==================================== */
+.animate-fadeInUp    { opacity: 0; }
+.animate-fadeInDown  { opacity: 0; }
+.animate-fadeInLeft  { opacity: 0; }
+.animate-fadeInRight { opacity: 0; }
+
+.animate-fadeInUp.animated    { animation: fadeInUp    0.7s ease forwards; }
+.animate-fadeInDown.animated  { animation: fadeInDown  0.7s ease forwards; }
+.animate-fadeInLeft.animated  { animation: fadeInLeft  0.7s ease forwards; }
+.animate-fadeInRight.animated { animation: fadeInRight 0.7s ease forwards; }
+
+.delay-1 { animation-delay: 0.15s !important; }
+.delay-2 { animation-delay: 0.30s !important; }
+.delay-3 { animation-delay: 0.45s !important; }
+
+/* ====================================
+   Counter Animation
+   ==================================== */
+.counter { display: inline-block; }
+
+/* ====================================
+   Magnetic Button Effect (JS hooks)
+   ==================================== */
+.btn-magnetic { transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1); }
+
+/* ====================================
+   Hover Tilt Cards
+   ==================================== */
+.tilt-card { transform-style: preserve-3d; }
+
+/* ====================================
+   Marquee (for branches strip)
+   ==================================== */
+.marquee-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-track {
+    display: flex;
+    gap: 20px;
+    animation: marquee 28s linear infinite;
+    width: max-content;
+}
+
+.marquee-wrap:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+/* ====================================
+   Typing cursor
+   ==================================== */
+.typing-cursor::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+    color: var(--orange, #e8621a);
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+
+/* ====================================
+   Glow pulse on hero phone
+   ==================================== */
+.glow-pulse {
+    animation: glowPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(232,98,26,0.25); }
+    50%       { box-shadow: 0 0 0 12px rgba(232,98,26,0); }
+}
+
+/* ====================================
+   Navbar Active Underline Animation
+   ==================================== */
+.nav-links li a {
+    transition: color 0.3s ease;
+}
+
+/* ====================================
+   Image hover zoom
+   ==================================== */
+.img-zoom { overflow: hidden; }
+.img-zoom img { transition: transform 0.6s cubic-bezier(0.4,0,0.2,1); }
+.img-zoom:hover img { transform: scale(1.06); }
+
+/* ====================================
+   Page transition (JS-added class)
+   ==================================== */
+.page-fade-in {
+    animation: fadeIn 0.5s ease both;
+}
+
+/* ====================================
+   Branch pill hover ripple
+   ==================================== */
+.branch-pill {
+    position: relative;
+    overflow: hidden;
+}
+
+.branch-pill::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(232,98,26,0.3) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.branch-pill:hover::after { opacity: 1; }
+
+/* ====================================
+   Stat card number pop
+   ==================================== */
+.stat-strip-num {
+    transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
+}
+
+.stat-strip-item:hover .stat-strip-num {
+    transform: scale(1.1);
+}
+
+/* ====================================
+   CTA section floating shapes
+   ==================================== */
+.cta-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+    pointer-events: none;
+}
+
+.cta-shape-1 {
+    width: 300px; height: 300px;
+    top: -80px; left: -80px;
+    animation: shapeFloat1 8s ease-in-out infinite;
+}
+
+.cta-shape-2 {
+    width: 200px; height: 200px;
+    bottom: -60px; right: -40px;
+    animation: shapeFloat2 10s ease-in-out infinite;
+}
+
+@keyframes shapeFloat1 {
+    0%, 100% { transform: translate(0,0) rotate(0deg); }
+    50%       { transform: translate(20px, 30px) rotate(15deg); }
+}
+
+@keyframes shapeFloat2 {
+    0%, 100% { transform: translate(0,0) scale(1); }
+    50%       { transform: translate(-20px, -20px) scale(1.2); }
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنيو — المنشاوي</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="light-page">
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <img src="logo.png" alt="المنشاوي" class="loader-logo">
+        <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="logo.png" alt="المنشاوي" class="nav-logo">
+                <span class="nav-brand-name">المنشاوي</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="menu.html" class="active">المنيو</a></li>
+                <li><a href="about.html">عن المنشاوي</a></li>
+                <li><a href="branches.html">الفروع</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-grid"></div>
+        <div class="page-header-orb"></div>
+        <div class="container">
+            <div class="page-breadcrumb">
+                <a href="index.html">الرئيسية</a>
+                <span>/</span>
+                <span>المنيو</span>
+            </div>
+            <h1>المنيو الكامل</h1>
+            <p>أطباق متنوعة بأسعار في متناول الجميع</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section section-padding">
+        <div class="container">
+
+            <!-- Tab Buttons -->
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="koshary">الكشري</button>
+                <button class="tab-btn" data-tab="fatta">الفتة</button>
+                <button class="tab-btn" data-tab="tawagen">الطواجن</button>
+                <button class="tab-btn" data-tab="helw">الحلو</button>
+                <button class="tab-btn" data-tab="additions">إضافات</button>
+                <button class="tab-btn" data-tab="drinks">مشروبات</button>
+            </div>
+
+            <!-- Koshary -->
+            <div class="tab-content active" id="koshary">
+                <img src="menu1.png" alt="منيو الكشري" class="menu-img-hero">
+                <div class="section-header dark" style="margin-bottom:36px">
+                    <div class="section-divider dark"></div>
+                    <h2>الكشري</h2>
+                    <div class="section-divider dark"></div>
+                </div>
+                <div class="menu-category-grid">
+                    <div class="menu-cat-card reveal reveal-d1">
+                        <div class="menu-cat-header"><h3>أطباق</h3></div>
+                        <ul class="price-list">
+                            <li><span class="item-name">أكس لارج المنشاوي</span><span class="item-price">35 ج</span></li>
+                            <li><span class="item-name">لارج بيج المنشاوي</span><span class="item-price">30 ج</span></li>
+                            <li><span class="item-name">بيج المنشاوي</span><span class="item-price">25 ج</span></li>
+                            <li><span class="item-name">المنشاوي</span><span class="item-price">20 ج</span></li>
+                            <li><span class="item-name">سوبر</span><span class="item-price">15 ج</span></li>
+                            <li><span class="item-name">مخصوص</span><span class="item-price">10 ج</span></li>
+                        </ul>
+                    </div>
+                    <div class="menu-cat-card reveal reveal-d2">
+                        <div class="menu-cat-header"><h3>علب</h3></div>
+                        <ul class="price-list">
+                            <li><span class="item-name">علبة أطفال</span><span class="item-price">—</span></li>
+                            <li><span class="item-name">علبة وسط</span><span class="item-price">—</span></li>
+                            <li><span class="item-name">علبة مخصوص</span><span class="item-price">20 ج</span></li>
+                            <li><span class="item-name">علبة وصاية</span><span class="item-price">25 ج</span></li>
+                            <li><span class="item-name">علبة الأكيل</span><span class="item-price">30 ج</span></li>
+                            <li><span class="item-name">علبة المنشاوي</span><span class="item-price">35 ج</span></li>
+                            <li><span class="item-name">علبة بيج المنشاوي</span><span class="item-price">40 ج</span></li>
+                        </ul>
+                    </div>
+                    <div class="menu-cat-card reveal reveal-d3">
+                        <div class="menu-cat-header"><h3>سندوتش</h3></div>
+                        <ul class="price-list">
+                            <li><span class="item-name">أكس لارج المنشاوي</span><span class="item-price">5 ج</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fatta -->
+            <div class="tab-content" id="fatta">
+                <div class="section-header dark" style="margin-bottom:36px">
+                    <div class="section-divider dark"></div>
+                    <h2>الفتة</h2>
+                    <div class="section-divider dark"></div>
+                </div>
+                <div class="menu-category-grid single-card">
+                    <div class="menu-cat-card wide-card reveal">
+                        <div class="menu-cat-header"><h3>أنواع الفتة</h3></div>
+                        <ul class="price-list">
+                            <li><span class="item-name">فتة سادة</span><span class="item-price">47 ج</span></li>
+                            <li><span class="item-name">فتة بالكبدة</span><span class="item-price">60 ج</span></li>
+                            <li><span class="item-name">فتة بالفراخ</span><span class="item-price">65 ج</span></li>
+                            <li><span class="item-name">فتة باللحمة</span><span class="item-price">70 ج</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tawagen -->
+            <div class="tab-content" id="tawagen">
+                <img src="menu2.png" alt="منيو الطواجن" class="menu-img-hero">
+                <div class="section-header dark" style="margin-bottom:36px">
+                    <div class="section-divider dark"></div>
+                    <h2>الطواجن</h2>
+                    <div class="section-divider dark"></div>
+                </div>
+                <div class="menu-category-grid">
+                    <div class="menu-cat-card reveal reveal-d1">
+                        <div class="menu-cat-header"><h3>طواجن</h3></div>
+                        <div class="size-header-row">
+                            <span></span>
+                            <span class="size-label">كبير</span>
+                            <span class="size-label">صغير</span>
+                        </div>
+                        <ul class="price-list two-prices">
+                            <li><span class="item-name">طاجن باللحمة</span><span class="item-price">63 ج</span><span class="item-price">46 ج</span></li>
+                            <li><span class="item-name">طاجن بالفراخ</span><span class="item-price">53 ج</span><span class="item-price">35 ج</span></li>
+                            <li><span class="item-name">طاجن بالكبدة</span><span class="item-price">45 ج</span><span class="item-price">29 ج</span></li>
+                            <li><span class="item-name">طاجن ميكس</span><span class="item-price">56 ج</span><span class="item-price">—</span></li>
+                        </ul>
+                    </div>
+                    <div class="menu-cat-card reveal reveal-d2">
+                        <div class="menu-cat-header"><h3>طواجن بالموزريلا</h3></div>
+                        <div class="size-header-row">
+                            <span></span>
+                            <span class="size-label">كبير</span>
+                            <span class="size-label">صغير</span>
+                        </div>
+                        <ul class="price-list two-prices">
+                            <li><span class="item-name">طاجن باللحمة</span><span class="item-price">73 ج</span><span class="item-price">61 ج</span></li>
+                            <li><span class="item-name">طاجن بالفراخ</span><span class="item-price">66 ج</span><span class="item-price">50 ج</span></li>
+                            <li><span class="item-name">طاجن بالكبدة</span><span class="item-price">58 ج</span><span class="item-price">45 ج</span></li>
+                            <li><span class="item-name">طاجن ميكس</span><span class="item-price">73 ج</span><span class="item-price">—</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Helw -->
+            <div class="tab-content" id="helw">
+                <div class="section-header dark" style="margin-bottom:36px">
+                    <div class="section-divider dark"></div>
+                    <h2>الحلو</h2>
+                    <div class="section-divider dark"></div>
+                </div>
+                <div class="menu-category-grid">
+                    <div class="menu-cat-card reveal reveal-d1">
+                        <div class="menu-cat-header"><h3>الحلو</h3></div>
+                        <ul class="price-list">
+                            <li><span class="item-name">أرز باللين</span><span class="item-price">17 ج</span></li>
+                            <li><span class="item-name">مهلبية / كاسترد</span><span class="item-price">13 ج</span></li>
+                            <li><span class="item-name">كاسترد جيلي</span><span class="item-price">17 ج</span></li>
+                            <li><span class="item-name">كريم كراميل</span><span class="item-price">21 ج</span></li>
+                            <li><span class="item-name">أم علي</span><span class="item-price">21 ج</span></li>
+                            <li><span class="item-name">قرع بالمهلبية</span><span class="item-price">18 ج</span></li>
+                            <li><span class="item-name">قرع عسل</span><span class="item-price">23 ج</span></li>
+                        </ul>
+                    </div>
+                    <div class="menu-cat-card reveal reveal-d2">
+                        <div class="menu-cat-header">
+                            <h3>جديد <span class="new-label">NEW</span></h3>
+                        </div>
+                        <ul class="price-list">
+                            <li><span class="item-name">ترافيل بسبوسة</span><span class="item-price">13 ج</span></li>
+                            <li><span class="item-name">ترافيل شيكولاته</span><span class="item-price">13 ج</span></li>
+                            <li><span class="item-name">كيك نوتيلا</span><span class="item-price">23 ج</span></li>
+                            <li><span class="item-name">أرز باللين فرن</span><span class="item-price">17 ج</span></li>
+                            <li><span class="item-name">بسبوسة بالقشطة</span><span class="item-price">17 ج</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additions -->
+            <div class="tab-content" id="additions">
+                <div class="section-header dark" style="margin-bottom:36px">
+                    <div class="section-divider dark"></div>
+                    <h2>إضافات</h2>
+                    <div class="section-divider dark"></div>
+                </div>
+                <div class="menu-category-grid single-card">
+                    <div class="menu-cat-card wide-card reveal">
+                        <div class="menu-cat-header"><h3>الإضافات</h3></div>
+                        <ul class="price-list">
+                            <li><span class="item-name">عدس – حمص – ورد</span><span class="item-price">10 ج</span></li>
+                            <li><span class="item-name">صلصة – شطة</span><span class="item-price">8-10 ج</span></li>
+                            <li><span class="item-name">جرجير</span><span class="item-price">3 ج</span></li>
+                            <li><span class="item-name">توست</span><span class="item-price">8 ج</span></li>
+                            <li><span class="item-name">إضافة لحمة</span><span class="item-price">30 ج</span></li>
+                            <li><span class="item-name">إضافة فراخ</span><span class="item-price">25 ج</span></li>
+                            <li><span class="item-name">إضافة كبدة</span><span class="item-price">19 ج</span></li>
+                            <li><span class="item-name">إضافة جبنة</span><span class="item-price">17 ج</span></li>
+                            <li><span class="item-name">إضافة زيتون</span><span class="item-price">3 ج</span></li>
+                            <li><span class="item-name">خبز</span><span class="item-price">1 ج</span></li>
+                            <li><span class="item-name">كاتشب</span><span class="item-price">1 ج</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="tab-content" id="drinks">
+                <div class="section-header dark" style="margin-bottom:36px">
+                    <div class="section-divider dark"></div>
+                    <h2>المشروبات</h2>
+                    <div class="section-divider dark"></div>
+                </div>
+                <div class="menu-category-grid single-card">
+                    <div class="menu-cat-card wide-card reveal">
+                        <div class="menu-cat-header"><h3>المشروبات</h3></div>
+                        <ul class="price-list">
+                            <li><span class="item-name">مياة معدنية صغيرة</span><span class="item-price">5 ج</span></li>
+                            <li><span class="item-name">كانز</span><span class="item-price">12 ج</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo-wrap">
+                    <img src="logo.png" alt="المنشاوي">
+                    <p>كشري وحلواني المنشاوي — طعم أصيل من قلب مصر.</p>
+                    <div class="social-links" style="margin-top:16px">
+                        <a href="https://www.facebook.com/koshary.Elmenshawy" target="_blank" class="social-link facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="menu.html">المنيو</a></li>
+                        <li><a href="about.html">عن المنشاوي</a></li>
+                        <li><a href="branches.html">الفروع</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>تواصل معنا</h4>
+                    <div class="footer-phone">19865</div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 المنشاوي — كشري وحلواني. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
